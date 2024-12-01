@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Converter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        h1 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4 shadow-sm">
+            <h1 class="text-center">Image to Text Converter</h1>
+            <p class="text-center text-muted">Upload an image and convert it to text instantly!</p>
+            <form action="/" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file">Choose an image to upload (PNG, JPG, JPEG):</label>
+                    <input type="file" name="file" id="file" class="form-control-file" accept=".png, .jpg, .jpeg" required>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary btn-lg">Convert</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS (Optional for interactivity) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f7f6;
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        h1 {
+            color: #007bff;
+        }
+        pre {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card p-4 shadow-sm">
+            <h1 class="text-center">Extracted Text</h1>
+            <p class="text-center text-muted">Here's the text extracted from the image you uploaded:</p>
+            <pre>{{ text }}</pre>
+            <div class="text-center">
+                <a href="{{ url_for('download_file', filename=text_file) }}" class="btn btn-success btn-lg">Download Extracted Text</a>
+            </div>
+            <br>
+            <div class="text-center">
+                <a href="/" class="btn btn-primary btn-lg">Back to Upload</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS (Optional for interactivity) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
